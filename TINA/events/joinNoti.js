@@ -42,7 +42,7 @@ ____________________________________
 মিকাইল কে নক করতে পারেন 
 👉Fb https://www.facebook.com/profile.php?id=100050059535072
 
-`, attachment: fs.createReadStream(__dirname + "Nayan", "font")} ,threadID));
+`, attachment: fs.createReadStream(__dirname + "/Nazrul/join.jpeg")} ,threadID));
   }
   else {
     try {
@@ -50,7 +50,7 @@ ____________________________________
       let { threadName, participantIDs } = await api.getThreadInfo(threadID);
 
       const threadData = global.data.threadData.get(parseInt(threadID)) || {};
-      const path = join(__dirname, "Nayan", "font");
+      const path = join(__dirname, "Nazrul", "font");
       const pathGif = join(path, `${threadID}.gif`);
 
       var mentions = [], nameArray = [], memLength = [], i = 0;
@@ -72,11 +72,11 @@ ____________________________________
 
       if (existsSync(path)) mkdirSync(path, { recursive: true });
 
-      const randomPath = readdirSync(join(__dirname, "Nayan", "font"));
+      const randomPath = readdirSync(join(__dirname, "Nazrul", "font"));
 
       if (existsSync(pathGif)) formPush = { body: msg, attachment: createReadStream(pathGif), mentions }
       else if (randomPath.length != 0) {
-        const pathRandom = join(__dirname, "Nayan", "font", `${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
+        const pathRandom = join(__dirname, "Nazrul", "font", `${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
         formPush = { body: msg, attachment: createReadStream(pathRandom), mentions }
       }
       else formPush = { body: msg, mentions }

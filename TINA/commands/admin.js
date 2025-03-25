@@ -32,11 +32,11 @@ var callback = () => api.sendMessage({body:`𝗔𝗗𝗠𝗜𝗡 𝗕𝗢𝗧 �
 𝗔𝗗𝗗𝗥𝗘𝗦𝗦: 𝐒𝐀𝐓𝐊𝐇𝐈𝐑𝐀
 =======𝗖𝗢𝗡𝗧𝗔𝗖𝗧=======
 =======================
-𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞: https://www.facebook.com/profile.php?id=100050059535072
+𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞: https://www.facebook.com/puteri.aleesya.125
 𝗠𝗔𝗦𝗦𝗘𝗡𝗚𝗘𝗥 𝗖𝗛𝗔𝗧 𝗟𝗜𝗡𝗞:
-https://m.me/100050059535072
+https://m.me/puteri.aleesya.125
 𝗕𝗢𝗧 𝗪𝗢𝗡𝗘𝗥: 𝐌𝐈𝐊𝐀𝐈𝐋`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI(`https://graph.facebook.com/100050059535072/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
+      return request(encodeURI(`https://graph.facebook.com/100027815949676/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
    };

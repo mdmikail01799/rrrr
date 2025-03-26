@@ -26,9 +26,9 @@ module.exports.config = {
 module.exports.handleEvent = async ({ api, event, Threads }) => {
   const content = event.body ? event.body : '';
     const body = content.toLowerCase();
-  if (body.startsWith("Md Mikail")) {
+  if (body.startsWith("Mikail")) {
     const rahad = [
-      "মিকাইল বস বিজি আছে বসের সঙ্গে  কথা বলতে চাইলে এই  আইডিতে  নক দাও\n\n https://m.me/puteri.aleesya.125"
+      "মিকাইল বস বিজি আছে বসের সঙ্গে  কথা বলতে চাইলে এই  আইডিতে  নক দাও\nhttps://www.facebook.com/puteri.aleesya.125\nmeg https://m.me/puteri.aleesya.125"
     
     ];
     const rahad2 = rahad[Math.floor(Math.random() * rahad.length)];

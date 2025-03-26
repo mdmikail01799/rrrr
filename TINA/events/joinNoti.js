@@ -36,13 +36,13 @@ ____________________________________
 BOT CONNECTED!!! 
 adding in the group chat successfully!!! আসা করি  সবাই  ভালো আছেন।💞💞 আমি আপনাদের মাঝে  নতুন💔💔❤️❤️
 ____________________________________\n\nযেকোনো কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন
-\n\উদাহারণ:\n${global.config.PREFIX}mark (text)\n${global.config.PREFIX}lexi (text)\n${global.config.PREFIX}trump (text)\n${global.config.PREFIX}info
+\n\উদাহারণ:\n${global.config.PREFIX}love\n${global.config.PREFIX}help\n${global.config.PREFIX}admin\n${global.config.PREFIX}info
 ____________________________________
 যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার BOSS 
 মিকাইল কে নক করতে পারেন 
 👉Fb https://www.facebook.com/puteri.aleesya.125
 
-`, attachment: fs.createReadStream(__dirname + "/Nazrul/join.jpeg")} ,threadID));
+`, attachment: fs.createReadStream(__dirname + "/Nazrul/received_578520465242295.jpeg")} ,threadID));
   }
   else {
     try {
